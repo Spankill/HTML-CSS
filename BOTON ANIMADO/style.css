@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #312727;
+}
+.container {
+  position: relative;
+}
+
+#btn {
+  position: relative;
+  padding: 20px 40px;
+  font-size: 1.25rem;
+  color: #ffd700;
+  background: #ff6b6b;
+  letter-spacing: 0.1em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.25s;
+  overflow: hidden;
+}
+
+#btn:active {
+  background: #7d6b01;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 9px;
+  background: rgba(250, 206, 46, 0.9);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 1;
+  transform: translate(0, 0);
+  animation: animate 1s ease-out forwards;
+}
+
+@keyframes animate {
+  to {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty));
+  }
+}
