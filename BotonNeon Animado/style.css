@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #350848;
+  flex-direction: column;
+}
+.container {
+  margin: 35px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .btn {
+  position: relative;
+  width: 155px;
+  height: 50px;
+  margin: 20px;
+}
+.container .btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  z-index: 10;
+  border-radius: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+  transition: 0.5s;
+}
+.container .btn a:hover {
+  letter-spacing: 4px;
+}
+.container .btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 50%;
+  background: #fff;
+  transform: skewX(45deg) translateX(50%);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transition: 0.9s;
+}
+.container .btn a:hover::before {
+  transform: skewX(145deg) translateX(220%);
+}
+.container .btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: #ff0461;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.container:nth-child(2) .btn::before {
+  border-radius: 5px;
+  transform: translate(-45%, -45%) rotate(45deg);
+}
+.container .btn:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  transform: translate(-50%, -50%) rotateX(0deg);
+}
+.container .btn:nth-child(1)::before {
+  background: #ff1f72;
+  box-shadow: 0 0 5px #ff1f72, 0 0 15px #ff1f72, 0 0 30px #ff1f72,
+    0 0 60px #ff1f72;
+}
+.container .btn:nth-child(2)::before {
+  background: #017026;
+  box-shadow: 0 0 5px #017026, 0 0 15px #017026, 0 0 30px #017026,
+    0 0 60px #017026;
+}
+.container .btn:nth-child(3)::before {
+  background: #015bc9;
+  box-shadow: 0 0 5px #015bc9, 0 0 15px #015bc9, 0 0 30px #015bc9,
+    0 0 60px #015bc9;
+}
