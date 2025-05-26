@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0050b7;
+    overflow: hidden;
+}
+
+#text {
+    position: relative;
+    color: #33bcfb;
+    font-size: 10em;
+    font-weight: 60;
+    cursor: default;
+}
+
+#light {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    pointer-events: n;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px #fff, 0 0 50px #fff, 0 0 100px #fff, 0 0 200px #fff,
+        0 0 300px #fff;
+}
