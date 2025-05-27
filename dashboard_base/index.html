@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DASHBOARD BASE completa</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="laptop"></ion-icon></span>
+                        <span class="title">NOMBRE de MARCA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
+                        <span class="title">DashBoard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="contact"></ion-icon></span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="chatbubbles"></ion-icon></span>
+                        <span class="title">Mensajes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="help-circle"></ion-icon></span>
+                        <span class="title">Ayuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="settings"></ion-icon></span>
+                        <span class="title">Configuracion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <span class="title">Contrasenia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-in"></ion-icon></span>
+                        <span class="title">Iniciar Sesion</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--principal-->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+            <!--buscador-->
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search Here" />
+                    <ion-icon name="search"></ion-icon>
+                </label>
+            </div>
+            <!----imagen de usuario-->
+            <div class="user">
+                <img src="user.png" alt="" />
+            </div>
+        </div>
+
+        <!--tarjetas-->
+        <div class="cardBox">
+            <div class="card">
+                <div>
+                    <div class="numbers">5,109</div>
+                    <div class="cardName">Vistas diarias</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="eye"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">124.980</div>
+                    <div class="cardName">Ventas</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="cart"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">8529</div>
+                    <div class="cardName">Comentarios</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="chatbubbles"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">$9,234</div>
+                    <div class="cardName">Ganancias</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="cash"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+
+        <!---Aniadir Graficos-->
+        <div class="graphBox">
+            <div class="box">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="box"></div>
+        </div>
+
+
+        <!--- lista de datos-->
+        <div class="details">
+            <div class="recentOrders">
+                <div class="cardHeader">
+                    <h2>Ordenes Recientes</h2>
+                    <a href="#" class="btn">Toda la vista</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Precio</td>
+                            <td>Pago</td>
+                            <td>Estado</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status delivered">
+                                    Entregado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status pendient">
+                                    Pendiente
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status return">
+                                    Regreso
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status pendient">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status delivered">
+                                    Entregado
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status return">
+                                    Regreso
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status return">
+                                    Regreso
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status delivered">
+                                    Entregado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status delivered">
+                                    Entregado
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status delivered">
+                                    Entregado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status return">
+                                    Regreso
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td>Cocina</td>
+                            <td>4000$</td>
+                            <td>Contado</td>
+                            <td><span class="status delivered">
+                                    Entregado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Horno industrial</td>
+                            <td>1100$</td>
+                            <td>Prepago</td>
+                            <td><span class="status delivered">
+                                    Entregado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Living</td>
+                            <td>40340$</td>
+                            <td>Cuotas</td>
+                            <td><span class="status delivered">
+                                    Entregado
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!---nuevos clientes--->
+            <div class="recentCustomers">
+                <div class="cardHeader">
+                    <h2>Nuevos Clientes</h2>
+                </div>
+                <table>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx">
+                                <img src="img1.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Carlos <br />
+                                <span>Rusia</span>
+                            </h4>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons @7/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons @7/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <script src="my_chart.js"></script>
+
+    <script>
+        //menu toogle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function () {
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        };
+
+        //hovered class de la lista ITEM
+        let list = document.querySelectorAll('.navigation li');
+        function activateLink() {
+            list.forEach((item) => item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) => {
+            item.addEventListener('mouseover', activateLink);
+            item.addEventListener('click', activateLink);
+        });
+    </script>
+</body>
+
+</html>
