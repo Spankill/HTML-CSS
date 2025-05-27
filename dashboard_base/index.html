@@ -9,7 +9,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
     </style>
-
 </head>
 
 <body>
@@ -126,15 +125,15 @@
             </div>
         </div>
 
-
         <!---Aniadir Graficos-->
         <div class="graphBox">
             <div class="box">
                 <canvas id="myChart"></canvas>
             </div>
-            <div class="box"></div>
+            <div class="box">
+                <canvas id="earning"></canvas>
+            </div>
         </div>
-
 
         <!--- lista de datos-->
         <div class="details">
@@ -417,9 +416,9 @@
         </div>
     </div>
 
-    <script type="module" src="https://unpkg.com/ionicons @7/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons @7/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <script type="module" src="https://esm.sh/ionicons/loader@8.0.7"></script>
+    <script nomodule src="https://esm.sh/ionicons/loader@8.0.7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="my_chart.js"></script>
 
     <script>

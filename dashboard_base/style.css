@@ -14,8 +14,9 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
     overflow-x: hidden;
+    background-color: var(--white);
 }
 
 .container {
@@ -223,18 +224,18 @@ body {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08 green, blue, alpha);
+    box-shadow: 0 7px 25px 0 rgb(251, 235, 1);
 }
 
 .cardBox .card .numbers {
-    color: var(--black2);
+    color: var(--grey);
     font-size: 1.1em;
     margin-top: 5px;
 }
 
 .cardBox .card .iconBx {
     font-size: 3.5em;
-    color: var(--blue);
+    color: var(--grey);
 }
 
 .cardBox
@@ -246,7 +247,7 @@ body {
     .cardBox
     .card:hover
     .iconBx {
-    color: var(--white);
+    color: var(--grey);
 }
 
 /*Graficos de barras*/
@@ -265,7 +266,7 @@ body {
     background: #222;
     padding: 20px;
     width: 100%;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 25px rgba(206, 229, 0, 0.244);
     border-radius: 20px;
 }
 
