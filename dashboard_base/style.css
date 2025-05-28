@@ -11,18 +11,28 @@
     --grey: #f5f5f5;
     --black1: #222;
     --black2: #999;
+    --prueba: #01d116;
 }
 
 body {
     min-height: 100%;
-    overflow-x: hidden;
+    overflow-x: auto;
     background-color: var(--white);
 }
 
 .container {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 900;
+}
+
+/* .container {
     position: relative;
     width: 100%;
-}
+    background-color: var(--white);
+} */
 
 .navigation {
     position: fixed;
@@ -128,18 +138,17 @@ body {
 
 /* Principal*/
 .main {
-    position: absolute;
+    position: relative;
+    margin-left: 300px;
     width: calc(100% - 300px);
-    left: 300px;
     min-height: 100vh;
     background: var(--white);
-
     transition: 0.5s;
 }
 
 .main.active {
-    width: calc(100%-80px);
-    left: 80px;
+    margin-left: 75px;
+    width: calc(100% - 75px);
 }
 
 .topbar {
@@ -153,19 +162,22 @@ body {
 
 .toggle {
     position: relative;
-    width: 60px;
-    height: 60px;
-    background: #ccc;
+    z-index: 999;
+    width: 55px;
+    height: 55px;
+    background: #fd6e00b0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.5em;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .search {
     position: relative;
-    width: 400px;
+    flex: 1;
+    max-width: 400px;
     margin: 0 10px;
 }
 .search label {
@@ -218,13 +230,13 @@ body {
 }
 .cardBox .card {
     position: relative;
-    background: var(--white);
+    background: var(--blue);
     padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px 0 rgb(251, 235, 1);
+    box-shadow: 0 7px 25px 0 rgba(251, 234, 1, 0.16);
 }
 
 .cardBox .card .numbers {
@@ -254,16 +266,17 @@ body {
 .graphBox {
     position: relative;
     width: 100%;
-    padding: 20px;
+    height: auto;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 30px;
-    min-height: 200px;
+    grid-gap: 20px;
+    min-height: 250px;
 }
 
 .graphBox .box {
     position: relative;
-    background: #222;
+    background: #ffc993;
     padding: 20px;
     width: 100%;
     box-shadow: 0 7px 25px rgba(206, 229, 0, 0.244);
@@ -277,16 +290,16 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
-    /* margin-top: 10px; */
+    margin-top: 10px;
 }
 
 .details .recentOrders {
     position: relative;
     display: grid;
     min-height: 500px;
-    background: var(--white);
+    background: #ffc993;
     padding: 20px;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 25px rgba(255, 247, 0, 0.194);
     border-radius: 20px;
 }
 
@@ -318,9 +331,13 @@ body {
     font-weight: 600;
 }
 
+.details .recentOrders .table thead tr td {
+    font-weight: bold;
+}
+
 .details .recentOrders table tr {
     color: var(--black1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(255, 56, 56);
 }
 
 .details .recentOrders table tr:last-child {
@@ -334,6 +351,7 @@ body {
 
 .details .recentOrders table tr td {
     padding: 10px;
+    border-radius: 8px;
 }
 
 .details .recentOrders table tr td:last-child {
@@ -373,13 +391,13 @@ body {
     font-weight: 500;
 }
 
-.recenteCustomers {
+.recentCustomers {
     position: relative;
     display: grid;
     min-height: 500px;
     padding: 20px;
-    background: var(--white);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    background: #ffc993;
+    box-shadow: 0 7px 25px rgba(255, 242, 0, 0.149);
     border-radius: 20px;
 }
 
@@ -406,6 +424,7 @@ body {
 
 .recentCustomers table tr td {
     padding: 12px 10px;
+    border-radius: 8px;
 }
 
 .recentCustomers table tr td h4 {
@@ -426,63 +445,84 @@ body {
 .recentCustomers table tr:hover td h4 span {
     color: var(--white);
 }
-@media (max-width: 991px) {
-    .graphBox {
-        grid-template-columns: 1fr;
-        height: auto;
+
+.graphBox canvas {
+    /* width: 100% !important; */
+    /* height: auto !important; */
+    /* max-width: 100%; */
+    /* display: block; */
+    /* margin: auto; */
+}
+
+/*MEDIA QUeRIES*/
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .main {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
     }
+
     .navigation {
         left: -300px;
     }
-    .main {
-        width: 100%;
+
+    .navigation.active {
         left: 0;
+        z-index: 1000;
     }
-    .main.active {
-        left: 300px;
+
+    .graphBox,
+    .cardBox,
+    .details {
+        grid-template-columns: 1fr;
     }
+
+    .recentOrders,
+    .recentCustomers {
+        overflow-x: auto;
+    }
+
     .cardBox {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .graphBox {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 768px) {
-    .details {
-        grid-template-columns: repeat(1, 1fr);
+/* Tablets y laptops pequeñas */
+@media (min-width: 769px) and (max-width: 880px) {
+    .main {
+        margin-left: 75px;
+        width: calc(100% - 75px);
     }
-    .recentOrders {
-        overflow-x: auto;
+
+    .cardBox {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .status.pendient {
-        white-space: nowrap;
+
+    .graphBox {
+        grid-template-columns: 1fr;
+        width: calc(100% - 75px);
     }
 }
-@media (max-width: 480px) {
+
+/* Pantallas grandes (escritorio) */
+@media (min-width: 993px) {
+    .main {
+        margin-left: 75px;
+
+        width: calc(100% - 75px);
+    }
+
     .cardBox {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
-    .cardHeader h2 {
-        font-size: 20px;
-    }
-    .user {
-        min-width: 40px;
-    }
-    .navigation {
-        width: 100%;
-        left: 100%;
-        z-index: 1000;
-    }
-    .navigation.active {
-        width: 100%;
-        left: 0;
-    }
-    .toggle {
-        z-index: 10001;
-    }
-    .main.active .toggle {
-        position: fixed;
-        right: 0;
-        left: initial;
-        color: var(--white);
+
+    .graphBox {
+        width: calc(100% - 75px);
+        grid-template-columns: 1fr 2fr;
     }
 }

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Dashboard ADMIN</title>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <div class="hamburguer-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <img src="images/tenaciousd.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        class="input-box"
+                        placeholder="Buscando..."
+                    />
+                    <span class="search-btn">
+                        <i class="fa-solid fa-search"></i>
+                    </span>
+                </div>
+
+                <div class="top-bar-right">
+                    <div class="mode-switch">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="notifications">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="profile">
+                        <img
+                            src="images/rigth.png"
+                            alt=""
+                            height="40px"
+                            width="40px"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!-- dashboard inicio -->
+            <aside class="side-bar">
+                <!-- navbar links -->
+                <span class="menu-label">MENU</span>
+                <ul class="navbar-links navbar-links-1">
+                    <li class="active">
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <span class="nav-text">DashBoard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-tasks"></i>
+                            </span>
+                            <span class="nav-text">Tasks</span>
+                        </a> </li
+                    ><li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <span class="nav-text">User</span>
+                        </a> </li
+                    ><li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </span>
+                            <span class="nav-text">Notification</span>
+                        </a> </li
+                    ><li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </span>
+                            <span class="nav-text">Analytics</span>
+                        </a> </li
+                    ><li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-comment"></i>
+                            </span>
+                            <span class="nav-text">Messages</span>
+                        </a> </li
+                    ><li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </span>
+                            <span class="nav-text">Collections </span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="line"></span>
+                <span class="menu-label">PREFERENCES</span>
+                <ul class="navbar-links navbar-links-2">
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-file"></i>
+                            </span>
+                            <span class="nav-text">Portafolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-pen"></i>
+                            </span>
+                            <span class="nav-text">History</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </span>
+                            <span class="nav-text">People & Teams</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-question"></i>
+                            </span>
+                            <span class="nav-text">Help & Center</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- fin navbar -->
+
+                <!-- Footer del sidebar -->
+                <div class="sidebar-footer">
+                    <div class="settings">
+                        <span class="gear-icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+                        <span class="text">Settings</span>
+                    </div>
+                    <div class="logoutBtn">
+                        <span class="logout-icon">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </span>
+                        <span class="text">Logout </span>
+                    </div>
+                </div>
+                <!-- fin Footer sidebar -->
+            </aside>
+            <!-- fin sidebar -->
+            <!-- INICIO SECCION CONTENIDO -->
+            <div class="contents">
+                <!-- inicio panelBar -->
+                <div class="panel-bar">
+                    <div class="row-1">
+                        <h1>Productos</h1>
+                    </div>
+                    <div class="row-2">
+                        <a href="#" class="active">Overview</a>
+                        <a href="#">Productos</a>
+                        <a href="#">Ventas Totales</a>
+                        <a href="#">Perchases?</a>
+                    </div>
+                </div>
+                <!-- fin panelbar -->
+                <!-- inicio descripcion -->
+                <div class="description">
+                    <!-- inicio columna -->
+                    <div class="col-1">
+                        <!-- inicio boxes row -->
+                        <div class="boxes-row">
+                            <div class="balance-box">
+                                <div class="subject-row">
+                                    <div class="text">
+                                        <h3>Total income</h3>
+                                        <h1>$12,543 <sub>(USD)</sub></h1>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                                <div class="progress-row">
+                                    <div class="subject"> Progress</div>
+                                    <div class="progress-bar">
+                                        <div
+                                            class="progress-line"
+                                            value="91%"
+                                            style="max-width: 91%"
+                                        >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="balance-box">
+                                <div class="subject-row">
+                                    <div class="text">
+                                        <h3>Total Expense</h3>
+                                        <h1>$76,345 <sub>(USD)</sub></h1>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
+                                </div>
+                                <div class="progress-row">
+                                    <div class="subject"> Progress</div>
+                                    <div class="progress-bar">
+                                        <div
+                                            class="progress-line"
+                                            value="69%"
+                                            style="max-width: 69%"
+                                        >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fin boxes row -->
+                        <!-- inicio estadistica analitica -->
+                        <div class="chart">
+                            <div class="chart-header">
+                                <h2>Analitica Revenue</h2>
+                                <input
+                                    type="month"
+                                    class="date"
+                                    value="2025-12"
+                                />
+                            </div>
+                            <div class="chart-contents">
+                                <section class="chart-grid">
+                                    <div class="grid-line" value="100%"></div>
+                                    <div class="grid-line" value="80%"></div>
+                                    <div class="grid-line" value="60%"></div>
+                                    <div class="grid-line" value="40%"></div>
+                                    <div class="grid-line" value="20%"></div>
+                                    <div class="grid-line" value="  0%"></div>
+                                </section>
+                                <section class="chart-value-wrapper">
+                                    <div
+                                        class="chart-value"
+                                        style="max-height: 62%"
+                                    ></div>
+                                    <div
+                                        class="chart-value"
+                                        style="max-height: 22%"
+                                    ></div>
+                                    <div
+                                        class="chart-value"
+                                        style="max-height: 72%"
+                                    ></div>
+                                    <div
+                                        class="chart-value"
+                                        style="max-height: 52%"
+                                    ></div>
+                                    <div
+                                        class="chart-value"
+                                        style="max-height: 32%"
+                                    ></div>
+                                    <div
+                                        class="chart-value"
+                                        style="max-height: 92%"
+                                    ></div>
+                                </section>
+                                <section class="chart-labels">
+                                    <div>Enero</div>
+                                    <div>Febrero</div>
+                                    <div>Marzo</div>
+                                    <div>Abril</div>
+                                    <div>Mayo</div>
+                                    <div>Junio</div>
+                                </section>
+                            </div>
+                        </div>
+                        <!-- fin estadistica analitica -->
+                    </div>
+                    <!-- fin columna -->
+                    <!-- inicio columna 2 -->
+                    <div class="col-2">
+                        <div class="top-products">
+                            <header class="products-header">
+                                <h1>Top Productos</h1>
+                            </header>
+                            <div class="product-wrapper">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./images/rigth.png" alt="" />
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-row-1">
+                                            <h2>Audifonos</h2>
+                                            <i
+                                                class="fa-solid fa-shopping-cart"
+                                            ></i>
+                                        </div>
+                                        <div class="product-row-2">
+                                            <p>Lorem ipsum dolor sit amet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./images/rigth.png" alt="" />
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-row-1">
+                                            <h2>TV Holografica</h2>
+                                            <i
+                                                class="fa-solid fa-shopping-cart"
+                                            ></i>
+                                        </div>
+                                        <div class="product-row-2">
+                                            <p>Lorem ipsum dolor sit amet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./images/rigth.png" alt="" />
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-row-1">
+                                            <h2>Cocina</h2>
+                                            <i
+                                                class="fa-solid fa-shopping-cart"
+                                            ></i>
+                                        </div>
+                                        <div class="product-row-2">
+                                            <p>Lorem ipsum dolor sit amet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./images/rigth.png" alt="" />
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-row-1">
+                                            <h2>Audifinos</h2>
+                                            <i
+                                                class="fa-solid fa-shopping-cart"
+                                            ></i>
+                                        </div>
+                                        <div class="product-row-2">
+                                            <p>Lorem ipsum dolor sit amet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./images/rigth.png" alt="" />
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-row-1">
+                                            <h2>Audifinos</h2>
+                                            <i
+                                                class="fa-solid fa-shopping-cart"
+                                            ></i>
+                                        </div>
+                                        <div class="product-row-2">
+                                            <p>Lorem ipsum dolor sit amet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./images/rigth.png" alt="" />
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-row-1">
+                                            <h2>Audifinos</h2>
+                                            <i
+                                                class="fa-solid fa-shopping-cart"
+                                            ></i>
+                                        </div>
+                                        <div class="product-row-2">
+                                            <p>Lorem ipsum dolor sit amet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./images/rigth.png" alt="" />
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-row-1">
+                                            <h2>Audifinos</h2>
+                                            <i
+                                                class="fa-solid fa-shopping-cart"
+                                            ></i>
+                                        </div>
+                                        <div class="product-row-2">
+                                            <p>Lorem ipsum dolor sit amet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./images/rigth.png" alt="" />
+                                    </div>
+                                    <div class="product-desc">
+                                        <div class="product-row-1">
+                                            <h2>Audifinos</h2>
+                                            <i
+                                                class="fa-solid fa-shopping-cart"
+                                            ></i>
+                                        </div>
+                                        <div class="product-row-2">
+                                            <p>Lorem ipsum dolor sit amet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fin productos -->
+                        <!-- inicio tarjeta de balance total -->
+                        <div class="balance-card">
+                            <div class="balance-card-top">
+                                <div class="text">
+                                    <h3>Total Income</h3>
+                                    <h1>$98,233<sub>(USD)</sub></h1>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+                            </div>
+                            <div class="balance-card-middle">
+                                <div class="subject">Progress</div>
+                                <div class="progress-bar">
+                                    <div
+                                        class="progress-line"
+                                        value="93%"
+                                        style="max-width: 93%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="balance-card-bottom">
+                                <button class="btn-top-up">
+                                    TOP Up <i class="fa-solid fa-arrow-up"></i>
+                                </button>
+                                <button class="btn-transfer">
+                                    Transfer
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- fin tarjeta de balance total -->
+                    </div>
+                    <!-- fin columna2 -->
+                </div>
+                <!-- fin descripcion -->
+            </div>
+            <!-- FIN SECCION CONTENIDO -->
+        </div>
+        <!-- fin page wrapper -->
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
