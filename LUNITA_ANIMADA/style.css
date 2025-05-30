@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color:#283434;
+}
+
+.container{
+    height: 31.25em;
+    width: 31.25em;
+    border: 1px solid white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background: linear-gradient(#283434,#8c6805,#d69d00,#8c6805,#283434);
+
+}
+
+.planet{
+    height: 15.62em;
+    width: 15.62em;
+    background-color: #d69d00;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;   
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.planet::before{
+    content: '';
+    position: absolute;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #8c6805;
+    top: 6em;
+    left: 3em;
+    border-radius: 50%;
+    box-shadow: 2em 5em 0em 0.6em #8c6805, 3.5em -2.5em 0em 1.2em #8c6805;
+
+}
+.satellite{
+    height: 2em;
+    width: 2em;
+    background-color: #838383;
+    border-radius: 50%;
+    position: relative;
+    left: 5em;
+    bottom: -20em;
+    animation: spin 3s infinite;
+    z-index: 1;
+
+}
+
+@keyframes spin{
+    49%{
+        z-index: 1;
+    }
+    50%{
+        bottom: -9.3em;
+        left: 23em;
+         
+    }
+}
