@@ -1,0 +1,34 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;    
+}
+
+h1{
+    color: #fff;
+    font-size : 55px;
+    text-align: center;
+    font-family: "Londrina Outline", cursive;
+    letter-spacing: 12px;
+}
+
+.text1{
+    text-shadow: 0 0 5px #ff14fb,
+    0 0 20px #ff14fb,
+    0 0 40px #ff14fb,
+    0 0 60px #ff14fb;
+}
+.text2{
+    text-shadow: 0 0 5px #ff7733,
+    0 0 20px #ff7733,
+    0 0 40px #ff7733,
+    0 0 60px #ff7733;
+}
+.text3{
+    text-shadow: 0 0 5px #00ff04,
+    0 0 20px #00ff04,
+    0 0 40px #00ff04,
+    0 0 60px #00ff04;
+}
