@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #663000;
+}
+
+.fidget{
+    position: absolute;
+    background-color: #92a2ff;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 43%;
+    left: 43%;
+    animation: spin 2s infinite;
+}
+.fidget::before{
+    position: absolute;
+    background-color: #5fa299;
+    height: 50px;
+    width: 50px;
+    content: '';
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.circle-1,.circle-2,.circle-3{
+    position: relative;
+    background-color: transparent;
+    border: 5px solid #92a2ff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.circle-1{
+    bottom: 35px;
+    left: -20px;
+}
+.circle-2{
+    bottom: 39px;
+    left: 76px;
+}
+.circle-3{
+    bottom: 40px;
+    left: -25px;
+} 
+
+
+.inner-1,.inner-2,.inner-3{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+}
+.inner-1{
+    background-color: #04bf17;
+}
+.inner-2{
+    background-color: #2a3cdd;
+}
+.inner-3{
+    background-color: #a51212;
+}
+
+.center1,.center2,.center3{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #004466;
+    top: 10px;
+    left: 10px;
+}
+
+
+
