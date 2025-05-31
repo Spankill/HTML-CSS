@@ -1,0 +1,73 @@
+body{
+    background: url(./fondito.jpg);
+    background-size: 190vh 100vh;
+
+}
+
+.login{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(23, 159, 255, 0.9);
+    border-color: 6px solid black;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+img{
+    position: relative;
+    left: 125px;
+    bottom: 100px;
+}
+
+h1{
+    color: orange;
+    border-color:black ;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"], input[type="password"]{
+    color: #ffffff;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 6px solid rgb(197, 129, 3);
+    outline: none;
+}
+
+.fa-user,.fa-lock{
+    font-size: 30px;
+    color: orange;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.username{
+    position: relative;
+    bottom: 70px;
+}
+.password{
+    position: relative;
+    bottom: 30px;
+}
+
+
+
+button{
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    font-size: 35px;
+    position: relative;
+    top: 50px;
+    left: 145px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
