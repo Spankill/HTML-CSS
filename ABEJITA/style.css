@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #504d4e;
+}
+
+.container{
+    height: 31.25em;
+    width: 31.25em;
+    position: absolute;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    animation: fly 3s infinite;
+}
+@keyframes fly{
+    50%{
+        transform: translateY(-3.2em);
+    }
+    
+}
+
+
+.bee{
+    height: 7.5em;
+    width: 12.5em;
+    background: linear-gradient(to right,#f4c13d 30%, #0d323e 30%, #0d323e 45%,#f4c13d 45%,#f4c13d 55%,#0d323e 55%, #0d323e 70%, #f4c13d 70%, #f4c13d 80%,#0d323e 80%);
+    border-radius: 5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: inset 0 -1.9em rgba(0,0,0,0.45);
+}
+
+.bee:before{
+    position: absolute;
+    content: '';
+    height: 0.87em;
+    width: 0.87em;
+    background-color: #0d323e;
+    border-radius: 50%;
+    top: 3.43em;
+    left: 1.25em;
+}
+
+.bee::after{
+    position: absolute;
+    content: '';
+    height: 0.31em;
+    width: 1.87em;
+    background-color: #0d323e;
+    border-radius: 0.91;
+    top: 3.43em;
+    left: 12em;
+}
+
+.wings{
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    background-color: #00bfff5a;
+    border-radius: 5em 5em 0em 5em;
+    top: 7.1em;
+    left: 11.25em;
+}
+.wings:before{
+    position: absolute;
+    content: '';
+    background-color: #00bfff5a;
+    height: 5em;
+    width: 5em;
+    border-radius: 5em 5em 5em 0em;
+    left: 5em;
+}
+
+.wings::after{
+    height: 3.75em;
+    width: 3.75em;
+    position: absolute;
+    content: '';
+    box-shadow: -0.62em -0.62em #f2c7c94d;
+    border-radius: 50%;
+    top: 1.12em;
+    left: 1.12em;
+}
+
+.shine{
+    position: absolute;
+    height: 1.25em;
+    width: 7.25em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1.25em;
+    top: 1.10em;
+    left: 3.15em;
+
+}
+
+.shine:before{
+    position: absolute;
+    content: '';
+    height: 3.12em;
+    width: 0.90em;
+    background-color: #0b2b35;
+    border-radius: 0.93em;
+    transform: rotate(-30deg);
+    top: 4.69em;
+    left: 1.87em;
+    box-shadow: 2.5em 1.25em #0b2b35;
+
+}
+
+@media screen and(min-width:700px){
+   .container{
+    font-size: 1.2em;
+   } 
+}
