@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINTERNA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="linterna">
+        <div class="upper">
+            <div class="s1"></div>
+        </div>
+        <div class="lower"></div>
+        <div class="body">
+            <button type="button" id="button" onclick="glow()">''</button>
+            <div class="s2"></div>
+        </div>
+        <div id="luces"></div>
+    </div>
+    <script>
+        let i;
+        i=0;
+        function glow() {
+            document.getElementById("button").style.visibility = "visible";
+            if (i==0){
+                document.getElementById("luces").style.visibility = "visible";
+                i=1;
+                document.getElementById("button").style.top = "85px";
+                document.getElementById("button").style.boxShadow ="none"
+            }
+            else{
+                document.getElementById("luces").style.visibility = "hidden";
+                document.getElementById("button").style.top = "80px";
+                document.getElementById("button").style.boxShadow = " 0px 5px #666666";
+                i=0;
+            }
+        }
+    </script>
+</body>
+</html>
