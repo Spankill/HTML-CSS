@@ -1,12 +1,12 @@
 body{
-    background-color: #f1f1f1;
+    background-color: #0e81d3;
     margin: 0;
     padding: 0;
 
 }
 
 .container{
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     width: 550px;
     height: 550px;
     position: absolute;
