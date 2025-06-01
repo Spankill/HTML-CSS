@@ -1,0 +1,56 @@
+body{
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: white;
+    width: 690px;
+    height: 220px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+button{
+    font-size: 30px;
+    background-color: #5bd4b8;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    top: 20px;
+    left: 50px;
+    position: relative;
+}
+
+button:nth-child(1){
+    cursor: url(img1.png), auto;
+}
+button:nth-child(2){
+    cursor: url(img2.png), auto;
+}
+button:nth-child(3){
+    cursor: url(img3.png), auto;
+}
+button:nth-child(4){
+    position: relative;
+    left: 140px;
+    top: 35px;
+    cursor: url(img4.png), auto;
+}
+button:nth-child(5){
+    position: relative;
+    top: 35px;
+    left: 140px;
+    cursor: url(img5.png), auto;
+}

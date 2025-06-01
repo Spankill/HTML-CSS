@@ -1,0 +1,32 @@
+body{
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* background-color: #212121; */
+    height: 150px;
+    width: 480px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 72px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.texto{
+    color: rgb(119, 255, 0);
+}
+
+
+.reflejo{
+    position: relative;
+    bottom: 25px;
+    background: linear-gradient(black,rgba(119, 255, 0, 0.5));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotateX(180deg);
+}
