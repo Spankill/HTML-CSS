@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0088ff;
+
+}
+
+.reloj{
+    height: 320px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+img{
+    opacity: 0.1;
+}
+
+.manecilla{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    margin: auto;
+    top: 0;
+    left: 160px;
+    border-radius: 5px;
+    /* transform:bottom translateY(-50%) translateX(-50%); */
+    transform-origin: bottom center;
+    transition: transform 0.5s ease;
+}
+
+.hora{
+    height: 60px;
+    width: 12px;
+    top: 100px;
+    background-color: blueviolet;
+}
+
+.minuto{
+    height: 90px;
+    width: 6px;
+    top: 70px;
+    background-color: darkorange;
+}
+.segundo{
+    height: 100px;
+    width: 3px;
+    top: 60px;
+    background-color: #ff0000;
+}
