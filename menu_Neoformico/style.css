@@ -1,0 +1,56 @@
+body{
+    background-color:#01c9f6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    height: 200px;
+    width: 90vw;
+    box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.6), 7px 7px 17px rgba(70, 70, 70, 0.15);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    display: block;
+    height: 100px;
+    width: 100px;
+    box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.6), 7px 7px 17px rgba(70, 70, 70, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.fa-whatsapp{
+    color: #01d004;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-instagram{
+    color: #e1306c;
+}
+.fa-linkedin{
+    color: #0077b5;
+}
+.fa-youtube{
+    color: #ff0000;
+}
+
+a:active{
+    box-shadow: inset -7px -7px 17px rgba(198, 198, 198, 0.6),
+                inset  7px 7px 17px rgba(39, 39, 39, 0.2);
+}
