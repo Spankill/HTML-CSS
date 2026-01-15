@@ -78,3 +78,8 @@ header{
       background: #3d4d1e;
       color: bisque;
 }
+@when (max-width: 600px) {
+      .activities-bank{
+            width: 100%;
+      }
+}
