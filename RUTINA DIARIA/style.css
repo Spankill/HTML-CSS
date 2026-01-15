@@ -1,0 +1,80 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      background-color: #ffffff;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
+      padding: 20px;
+
+}
+
+header{
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-style: italic;
+}
+
+.activities-bank{
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      background: #A8E6CF;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      
+}
+
+.routine-builder{
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+
+.routine-builder{
+      width: 65%;
+      margin: 30px auto;
+}
+
+.time-slot{
+      background: #AED9E0;
+      border-radius: 10px;
+      padding: 15px;
+      flex: 1;
+      min-width: 200px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.slot-drop-area{
+      min-height: 100px;
+      border: 2px dashed #ffffff;
+      border-radius: 8px;
+      margin-top: 10px;
+      padding: 10px;
+
+}
+
+.activity{
+      background: #AED9E0;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      cursor: grab;
+      user-select: none;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      
+}
+
+.activity:hover{
+      background: #3d4d1e;
+      color: bisque;
+}

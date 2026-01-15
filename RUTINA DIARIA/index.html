@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Routine DayByDay</title>
+</head>
+<body>
+      <header>
+            <h1>Programa Tu Rutina Diaria</h1>
+      </header>
+
+      <!-- seccion de actividades -->
+      <section class="activities-bank">
+            <h2>Actividades Sugeridas</h2>
+            <div class="activity" draggable="true" data-time="30" data-category="salud">🧘🏻‍♂️ Meditar (30 min.)</div>
+            <div class="activity" draggable="true" data-time="45" data-category="salud">🏃🏻‍♂️ Correr (5 km)</div>
+            <div class="activity" draggable="true" data-time="60" data-category="lectura">📚 Leer un libro (1 hora)</div>
+            <div class="activity" draggable="true" data-time="60" data-category="cocina">🍳 Cocinar una receta nueva</div>
+            <div class="activity" draggable="true" data-time="30" data-category="escritura">📝 Escribir en un diario</div>
+            <div class="activity" draggable="true" data-time="60" data-category="arte">🎨 Dibujar o pintar</div>
+            <div class="activity" draggable="true" data-time="30" data-category="audio">🎧 Escuchar un podcast</div>
+            <div class="activity" draggable="true" data-time="30" data-category="naturaleza">🌳 Pasear al aire libre</div>
+            <div class="activity" draggable="true" data-time="60" data-category="entretenimiento">📺 Ver un video de YouTube</div>
+            <div class="activity" draggable="true" data-time="60" data-category="entretenimiento">🎮 Jugar a un videojuego</div>
+      </section>
+
+      <!-- seccion de rutinas -->
+      <main class="routine-builder">
+            <div class="time-slot" id="morning">
+                  <h2>Mañana</h2>
+                  <div class="slot-drop-area" data-slot="morning">
+                  </div>
+            </div>
+            <div class="time-slot" id="afternoon">
+                  <h2>Tarde</h2>
+                  <div class="slot-drop-area" data-slot="afternoon">
+                  </div>
+            </div>
+            <div class="time-slot" id="night">
+                  <h2>Noche</h2>
+                  <div class="slot-drop-area" data-slot="night"></div>
+            </div>
+
+      </main>
+
+      <script src="script.js"></script>
+</body>
+</html>
